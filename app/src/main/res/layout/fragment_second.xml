@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8DADC"
+    android:padding="16dp"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageButton
+        android:id="@+id/HeartButtonPlayer2"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#F1FAEE"
+        android:contentDescription="@string/button_to_add_lives"
+        android:src="@drawable/baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/DownArrowButton"
+        app:tint="#E63946"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/UpArrowButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#1D3557"
+        android:contentDescription="@string/idk"
+        android:src="@drawable/baseline_arrow_upward_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="#F1FAEE" />
+
+    <ImageButton
+        android:id="@+id/DownArrowButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#1D3557"
+        android:contentDescription="@string/idk"
+        android:src="@drawable/baseline_arrow_downward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:tint="#F1FAEE" />
+
+    <ImageButton
+        android:id="@+id/HeartButtonPlayer1"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="#F1FAEE"
+        android:contentDescription="@string/idk"
+        android:src="@drawable/baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/UpArrowButton"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:tint="#E63946" />
+
+    <ImageButton
+        android:id="@+id/EmptyHeartButtonPlayer1"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="#F1FAEE"
+        android:contentDescription="@string/idk"
+        android:src="@drawable/baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/UpArrowButton"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:tint="#E63946" />
+
+    <ImageButton
+        android:id="@+id/EmptyHeartButtonPlayer2"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#F1FAEE"
+        android:contentDescription="@string/idk"
+        android:src="@drawable/baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/DownArrowButton"
+        app:tint="#E63946"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/CountLifesTextPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/idk"
+        android:text="@string/_25_0"
+        android:textColor="#E63946"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/DownArrowButton"
+        app:layout_constraintStart_toStartOf="@+id/DownArrowButton"
+        app:layout_constraintTop_toBottomOf="@+id/DownArrowButton" />
+
+    <TextView
+        android:id="@+id/CountLifesTextPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:text="25/0"
+        android:textColor="#E63946"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/UpArrowButton"
+        app:layout_constraintEnd_toStartOf="@+id/EmptyHeartButtonPlayer1"
+        app:layout_constraintStart_toEndOf="@+id/HeartButtonPlayer1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="98dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="170dp"
+        android:backgroundTint="#457B9D"
+        android:text="P+"
+        android:textColor="#F1FAEE"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/UpArrowButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="98dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="170dp"
+        android:backgroundTint="#457B9D"
+        android:text="P-"
+        android:textColor="#F1FAEE"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/UpArrowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="98dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#457B9D"
+        android:text="P+"
+        android:textColor="#F1FAEE"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DownArrowButton" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="98dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#457B9D"
+        android:text="P-"
+        android:textColor="#F1FAEE"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DownArrowButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

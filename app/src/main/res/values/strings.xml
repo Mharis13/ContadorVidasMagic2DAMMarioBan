@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Contador Vidas Magic 2DAM Mario Ban</string>
+    <string name="action_settings">Reset</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+
+    </string>
+    <string name="button_to_add_lives">Button to add lives</string>
+    <string name="idk">idk</string>
+    <string name="_25_0">25/0</string>
+</resources>
